@@ -2,22 +2,31 @@
 namespace GraphSharp
 {
 
+using System.Collections.Generic;
+
 public partial class Graph
 {
+
   public class Vertex
   {
-    int val;
-    Edge[] edges;
+    int id;
 
-    public Vertex( int val=0)
+    List<Edge> edges;
+
+    public Vertex( int id=-1)
     {
-      this.val = val;
+      this.id = id;
+      this.edges = new List<Edge>();
     }
 
-    public int Value
+    public int ID
     {
-      get { return this.val;}
-      set { this.val = value;}
+      get { return this.id;}
+    }
+
+    public List<Edge> Edges
+    {
+      get { return this.edges;}
     }
   }
 }

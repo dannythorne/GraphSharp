@@ -9,7 +9,10 @@ public class Program
 
     Graph graph = new Graph(12);
     graph.Display();
-    graph.InsertEdge();
+    graph.InsertRandomEdges();
+    graph.Display();
+
+    System.Console.WriteLine("Good Bye");
   }
 }
 
