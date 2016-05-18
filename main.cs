@@ -7,9 +7,14 @@ public class Program
   {
     System.Console.WriteLine("Hello");
 
-    Graph graph = new Graph(12);
-    graph.Display();
+    Graph graph = new Graph(32);
+    //graph.Display();
     graph.InsertRandomEdges();
+    graph.Display();
+    graph.RemoveRandomEdges();
+    graph.RemoveRandomEdges();
+    graph.RemoveRandomEdges();
+    graph.RemoveRandomEdges();
     graph.Display();
 
     System.Console.WriteLine("Good Bye");
